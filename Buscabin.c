@@ -6,13 +6,13 @@ int Bbin(int *vector, int begin, int end, int item)
 
 {
 
-    /* Õndice do meio */
+    /* √çndice do meio */
 
     int i = (begin + end) / 2;
 
 
 
-    if (begin >= end) {  /* Ponto de parada. Item n„o est· no vetor */
+    if (begin >= end) {  /* Ponto de parada. Item n√£o est√° no vetor */
 
 
         return i;
@@ -29,7 +29,7 @@ int Bbin(int *vector, int begin, int end, int item)
 
 
 
-    if (vector[i] < item) {  /* Item est· no sub-vetor ‡ direita */
+    if (vector[i] < item) {  /* Item est√° no sub-vetor √† direita */
 
         return Bbin(vector, i + 1, end, item);
 
@@ -37,7 +37,7 @@ int Bbin(int *vector, int begin, int end, int item)
 
 
 
-    } else {  /* vector[i] > item. Item est· no sub-vetor ‡ esquerda */
+    } else {  /* vector[i] > item. Item est√° no sub-vetor √† esquerda */
 
         return Bbin(vector, begin, i - 1, item);
 
